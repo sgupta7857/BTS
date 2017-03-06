@@ -1,0 +1,58 @@
+﻿@using PagedList.Mvc; //import this so we get our HTML Helper
+@using PagedList;
+<link href="/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@model  IEnumerable<WebApplication2.Controllers.ProductBase>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhotoUrl)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductDesc)
+        </td>
+        <td>
+            @{ var alt = $"{item.ProductName}"; }
+            <img src="/photo/@item.ProductID" alt="@alt" title="@alt" class="img-responsive" style="width: 150px;" />
+            @*@Html.DisplayFor(modelItem => item.PhotoUrl)*@
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductID })
+        </td>
+    </tr>
+}
+
+</table>

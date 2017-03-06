@@ -1,0 +1,50 @@
+﻿@model WebApplication2.Controllers.ProductBase
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductBase</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductDesc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoUrl)
+        </dt>
+
+        <dd>
+            @{ var alt = $"{Model.Price} {Model.ProductID} {Model.ProductName}"; }
+            <img src="/photo/@Model.ProductID" alt="@alt" title="@alt" class="img-responsive" />
+            @*@Html.DisplayFor(model => model.PhotoUrl)*@
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

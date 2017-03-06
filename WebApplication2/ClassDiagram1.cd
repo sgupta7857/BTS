@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WebApplication2.Models.Product">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAAgCAABAAAAAAAAAAAAACAAQAAAAAISAA=</HashCode>
+      <FileName>Models\DesignModelClassess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApplication2.Models.Review">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAgAAAAAAAAAARAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DesignModelClassess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApplication2.Models.Category">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DesignModelClassess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApplication2.Models.Manufacturer">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAACAAAAAAAAAAQAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DesignModelClassess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApplication2.Models.Address">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAABAAAAACIIAAAAAAAAAIAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\DesignModelClassess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
